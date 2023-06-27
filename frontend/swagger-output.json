@@ -1,0 +1,102 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "EDS API",
+        "description": "Equipment Distribution System API documentation"
+    },
+    "host": "localhost:5000",
+    "basePath": "/api/v1/",
+    "tags": [
+        {
+            "name": "User",
+            "description": "Operations related to user management"
+        },
+        {
+            "name": "EmployeeLaptop",
+            "description": "Operations related to laptop/equipment distribution management"
+        }
+    ],
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "Authorization",
+            "in": "header"
+        }
+    },
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {},
+    "definitions": {
+        "User": {
+            "type": "object",
+            "properties": {
+                "names": {
+                    "type": "string",
+                    "example": "John"
+                },
+                "username": {
+                    "type": "string",
+                    "example": "johndoe@gmail.com"
+                },
+                "password": {
+                    "type": "string",
+                    "example": "john@123"
+                }
+            }
+        },
+        "EmployeeLaptop": {
+            "type": "object",
+            "properties": {
+                "firstname": {
+                    "type": "string",
+                    "example": "Samanta"
+                },
+                "lastname": {
+                    "type": "string",
+                    "example": "ISHIMWE"
+                },
+                "nationalIdentity": {
+                    "type": "string",
+                    "example": "12000710913307"
+                },
+                "telephone": {
+                    "type": "string",
+                    "example": "0788888888"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "samanta@gmail.com"
+                },
+                "department": {
+                    "type": "string",
+                    "example": "Human resource"
+                },
+                "position": {
+                    "type": "string",
+                    "example": "Manager"
+                },
+                "laptopManufacturer": {
+                    "type": "string",
+                    "example": "HP"
+                },
+                "model": {
+                    "type": "string",
+                    "example": "envy"
+                },
+                "serialNumber": {
+                    "type": "string",
+                    "example": "3400"
+                }
+            }
+        }
+    }
+}
